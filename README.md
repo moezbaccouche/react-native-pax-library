@@ -1,6 +1,6 @@
 # react-native-pax-library
 
-A React-Native module which allows the use of native features (Ticket Printing, Opening Cash Drawer, ...) of a Pax Technology Android device through NeptuneLiteUser API.
+A React-Native module which allows the use of native features (Ticket Printing, Opening Cash Drawer, ...) of a Pax Technology Android device through NeptuneLite API.
 
 ## STILL UNDER DEVELOPMENT
 

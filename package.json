@@ -1,7 +1,6 @@
-
 {
   "name": "react-native-pax-library",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React-Native module which allows the use of native features (Ticket Printing, Opening Cash Drawer, ...) of a Pax Technology Android device through NeptuneLite API.",
   "main": "index.js",
   "scripts": {
