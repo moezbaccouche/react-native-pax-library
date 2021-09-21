@@ -5754,10 +5754,10 @@
     "jscodeshift" "^0.11.0"
     "nullthrows" "^1.1.1"
 
-"react-native-pax-library@^1.0.2":
-  "integrity" "sha512-pUmyeNwVxgkXtOhbyjl/s3UTTYUKYafyeasrYfLxhw4qP8NumEq2tWf2xgzQyT2tVf2bNXWnwGAUKXG3jliUGQ=="
-  "resolved" "https://registry.npmjs.org/react-native-pax-library/-/react-native-pax-library-1.0.2.tgz"
-  "version" "1.0.2"
+"react-native-pax-library@^1.0.5":
+  "integrity" "sha512-gUA9x0doxs7QYV92LVzppW8uFRXLzyKuzKv69MqOMLICTHiPMqY82I2QY77lXAOwTJFrqO06pUZT0aTxsI6wnA=="
+  "resolved" "https://registry.npmjs.org/react-native-pax-library/-/react-native-pax-library-1.0.5.tgz"
+  "version" "1.0.5"
 
 "react-native@>=0.65.0-rc.0 || 0.0.0-*", "react-native@0.65.1":
   "integrity" "sha512-0UOVSnlssweQZjuaUtzViCifE/4tXm8oRbxwakopc8GavPu9vLulde145GOw6QVYiOy4iL50f+2XXRdX9NmMeQ=="

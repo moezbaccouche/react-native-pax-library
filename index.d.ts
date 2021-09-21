@@ -3,6 +3,7 @@ declare var Pax: {
   PARTIAL_CUT: number;
 
   printStr: (text: string, cutMode?: number) => void;
+  openDrawer: () => Promise<any>;
 };
 
 export default Pax;

@@ -79,6 +79,22 @@ import Pax from "react-native-pax-library";
 Pax.printStr("Hello World", Pax.PARTIAL_CUT);
 ```
 
+## Opening Cash Drawer
+
+If you have a cash drawer linked to your Pax device, you will be able to open it automatically using the method `openDrawer(): Promise<any>`
+
+The result returned from this method is a promise that resolves with the result **0** if it succeeds.
+
+```js
+// ...
+
+try {
+  const result = await Pax.openDrawer();
+} catch (error) {
+  console.error("Unable to open Cash Drawer.");
+}
+```
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.

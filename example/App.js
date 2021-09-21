@@ -22,9 +22,20 @@ const App = () => {
     Pax.printStr("Hello World !", Pax.PARTIAL_CUT);
   };
 
+  const onOpenDrawer = async () => {
+    try {
+      const result = await Pax.openDrawer();
+      console.log("Opened", result);
+    } catch (error) {
+      console.log("Unable to open Cash Drawer.");
+    }
+  };
+
   return (
     <View style={{ flex: 1 }}>
       <Button title="Print" onPress={onPrint} />
+
+      <Button title="Open Cash Drawer" color="#2699FB" onPress={onOpenDrawer} />
     </View>
   );
 };
