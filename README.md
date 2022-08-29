@@ -55,6 +55,16 @@ Run your application
 npx react-native run-android
 ```
 
+## Step 7
+
+For certain devices like **A920Pro** you must explicitly add a permission in order to use the printer.
+
+Open `AndroidManifest.xml` of your React-Native app and add the following line:
+
+```xml
+  <uses-permission android:name="com.pax.permission.PRINTER" />
+```
+
 ## Usage
 
 ## Printing
