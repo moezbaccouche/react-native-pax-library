@@ -1,6 +1,10 @@
 
 package com.reactpaxlibrary;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.util.Base64;
+
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -43,6 +47,21 @@ public class RNPaxLibraryModule extends ReactContextBaseJavaModule {
             printer.init();
             printer.setGray(3);
             printer.printStr(text, null);
+            printer.start();
+            printer.cutPaper(cutMode.intValue());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @ReactMethod
+    public void printBitmap(String base64, Double cutMode) {
+        try {
+            byte[] decodedString = Base64.decode(base64, Base64.DEFAULT);
+            Bitmap bitmap = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
+
+            printer.init();
+            printer.printBitmap(bitmap);
             printer.start();
             printer.cutPaper(cutMode.intValue());
         } catch (Exception e) {
